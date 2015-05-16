@@ -10,7 +10,7 @@ from leancloud import LeanCloudError
 from leancloud import Query
 from scrapy import log
 from scrapy.exceptions import DropItem
-
+from datetime import datetime
 from  bbsOnline.items import BbsonlineItem
 
 class OnlinerSpider(scrapy.Spider):
@@ -22,7 +22,7 @@ class OnlinerSpider(scrapy.Spider):
 
     def parse(self, response):
         item = BbsonlineItem()
-
+	item['requestTime'] = datetime.now()
         item['totalOnlineCount'] = int(response.xpath('//*[@id="bot_info"]/span[@class="c-total"]/text()').extract()[0])
         item['userOnlineCount'] = int(response.xpath('//*[@id="bot_info"]/span[@class="c-user"]/text()').extract()[0])
         item['guestOnlineCount'] = int(response.xpath('//*[@id="bot_info"]/span[@class="c-guest"]/text()').extract()[0])

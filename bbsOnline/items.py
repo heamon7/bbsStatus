@@ -11,6 +11,7 @@ import scrapy
 class BbsonlineItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    requestTime = scrapy.Field()
     totalOnlineCount = scrapy.Field()
     userOnlineCount = scrapy.Field()
     guestOnlineCount = scrapy.Field()

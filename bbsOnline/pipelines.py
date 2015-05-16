@@ -21,6 +21,7 @@ class OnlinePipeline(object):
 
         BbsStatus = Object.extend('BbsStatus')
         bbsStatus = BbsStatus()
+	bbsStatus.set('requestTime',item['requestTime'])
         bbsStatus.set('totalOnlineCount',item['totalOnlineCount'])
         bbsStatus.set('userOnlineCount',item['userOnlineCount'])
         bbsStatus.set('guestOnlineCount',item['guestOnlineCount'])
