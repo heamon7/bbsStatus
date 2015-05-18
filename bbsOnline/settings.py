@@ -16,6 +16,9 @@ NEWSPIDER_MODULE = 'bbsOnline.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'bbsOnline (+http://www.yourdomain.com)'
 
+APP_ID = 'rb4tkl4c970mzj32qgbjhvil7nhbq4fuzp6zs8o4yly9i8kn'
+MASTER_KEY = 'kk2m9sscwun4ftihpj8az0zk55rry2ee22w25ip58yw7bfqt'
+
 ITEM_PIPELINES = {
     'bbsOnline.pipelines.OnlinePipeline': 300,
    # 'zhihut.pipelines.SecondPipline': 800,
