@@ -15,6 +15,11 @@ NEWSPIDER_MODULE = 'bbsOnline.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'bbsOnline (+http://www.yourdomain.com)'
+LOG_LEVEL = 'INFO'
+DOWNLOAD_TIMEOUT = 700
+
+CONCURRENT_REQUESTS = 70
+CONCURRENT_REQUESTS_PER_DOMAIN = 70
 
 APP_ID = 'rb4tkl4c970mzj32qgbjhvil7nhbq4fuzp6zs8o4yly9i8kn'
 MASTER_KEY = 'kk2m9sscwun4ftihpj8az0zk55rry2ee22w25ip58yw7bfqt'
